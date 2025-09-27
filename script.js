@@ -268,8 +268,7 @@ function initializeEventListeners() {
 
     // Resume and LinkedIn buttons
     document.getElementById('resume-btn').addEventListener('click', function() {
-        // In a real application, this would download a PDF
-        alert('Resume download would start here');
+        window.open('https://drive.google.com/file/d/19aLIJLJb4U9HY0C5V81cKCWPsqs7lse-/view?usp=sharing', '_blank');
     });
 
     document.getElementById('linkedin-btn').addEventListener('click', function() {
