@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Who's Watching?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Portfolio Intro Sequence -->
+    <div id="portfolio-intro" class="portfolio-intro">
+        <div class="intro-content">
+            <div class="name-intro">
+                <h1 class="intro-name">A E SAI DHANUSH</h1>
+                <h2 class="intro-title">FULL STACK DEVELOPER</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Selection Page -->
+    <div id="profile-selection" class="profile-selection hidden">
+        <div class="container">
+            <h1 class="main-title">Who's Watching?</h1>
+            <div class="profiles-grid">
+                <div class="profile-card" data-profile="developer">
+                    <div class="profile-avatar recruiter">
+                        <img src="assets/Who's watching red.jpg" alt="Recruiter Profile" class="profile-image">
+                    </div>
+                    <h3>Recruiter</h3>
+                </div>
+                <div class="profile-card" data-profile="developer">
+                    <div class="profile-avatar developer">
+                        <img src="assets/Who's watching blue.png" alt="Developer Profile" class="profile-image">
+                    </div>
+                    <h3>Developer</h3>
+                </div>
+                <div class="profile-card" data-profile="developer">
+                    <div class="profile-avatar freelancer">
+                        <img src="assets/Who's watching yellow.jpg" alt="Freelancer Profile" class="profile-image">
+                    </div>
+                    <h3>Freelancer</h3>
+                </div>
+                <div class="profile-card" data-profile="developer">
+                    <div class="profile-avatar adventurer">
+                        <img src="assets/Who's watching green.jpg" alt="Adventurer Profile" class="profile-image">
+                    </div>
+                    <h3>Adventurer</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Individual Portfolio Pages -->
+    <div id="portfolio-page" class="portfolio-page hidden">
+        <!-- Global Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>A E SAI DHANUSH</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#" id="nav-home" class="nav-link active">Home</a></li>
+                    <li><a href="#professional" id="nav-professional" class="nav-link">Professional</a></li>
+                    <li><a href="#skills" id="nav-skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" id="nav-projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certificates" id="nav-certificates" class="nav-link">Certificates & Achievements</a></li>
+                    <li><a href="#hire" id="nav-hire" class="nav-link">Hire Me</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <video class="hero-video" id="hero-video" muted autoplay loop playsinline preload="auto">
+                    <source src="assets/hero.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title" id="hero-title">A E SAI DHANUSH</h1>
+                <h2 class="hero-subtitle" id="hero-subtitle">FULL STACK DEVELOPER</h2>
+                <p class="hero-description" id="hero-description">
+                    Passionate about creating innovative solutions and delivering high-quality software. 
+                    Experienced in full-stack development with expertise in Java, Spring Boot, and modern web technologies.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="resume-btn">Download Resume</button>
+                    <button class="btn btn-secondary" id="linkedin-btn">LinkedIn Profile</button>
+                </div>
+            </div>
+            <button id="sound-toggle" class="sound-toggle" aria-pressed="true" title="Toggle sound">Mute</button>
+        </section>
+
+        <!-- Portfolio Rows -->
+        <main class="main-content">
+            <!-- Professional (Education Timeline) -->
+            <section id="professional" class="content-row hidden">
+                <h2 class="row-title">Professional — Education Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Bachelor of Technology (B.Tech) — Computer Science</h3>
+                            <p class="timeline-meta">2021 – 2025 · Vel Tech University</p>
+                            <p class="timeline-desc">Focused on full‑stack development, data structures & algorithms, databases, and cloud fundamentals. Led 2 capstone projects and participated in coding hackathons.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Intermediate — MPC</h3>
+                            <p class="timeline-meta">2019 – 2021 · Narayana Junior College</p>
+                            <p class="timeline-desc">Mathematics, Physics, Chemistry with strong problem‑solving groundwork and competitive preparation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Secondary School</h3>
+                            <p class="timeline-meta">2018 – 2019 · St. Joseph English High School</p>
+                            <p class="timeline-desc">General curriculum with distinction; interests in computers and science clubs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hire Me (Contact) -->
+            <section id="hire" class="content-row hidden">
+                <h2 class="row-title">Hire Me</h2>
+                <div class="hire-container">
+                    <div class="hire-card">
+                        <div class="hire-header">
+                            <h3 class="hire-title">Let's Work Together</h3>
+                            <p class="hire-subtitle">Ready to bring your ideas to life? I'm here to help you build amazing solutions.</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-info">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+919291264202" class="contact-link">+91 9291264202</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-info">
+                                    <h4>Email</h4>
+                                    <a href="mailto:saidhanushae@gmail.com" class="contact-link">saidhanushae@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">💼</div>
+                                <div class="contact-info">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/a-e-sai-dhanush-7809a0265/" target="_blank" class="contact-link">View Profile</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">💻</div>
+                                <div class="contact-info">
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/dhanush435" target="_blank" class="contact-link">View Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hire-cta">
+                            <p class="cta-text">Available for freelance projects, full-time positions, and consulting opportunities.</p>
+                            <div class="availability-badge">
+                                <span class="status-dot"></span>
+                                Available for new projects
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Row -->
+            <section id="projects" class="content-row">
+                <h2 class="row-title">Featured Projects</h2>
+                <div class="project-filters" id="project-filters">
+                    <label><input type="radio" name="projectFilter" value="all" checked> All</label>
+                    <label><input type="radio" name="projectFilter" value="java"> Java</label>
+                    <label><input type="radio" name="projectFilter" value="spring"> Spring</label>
+                    <label><input type="radio" name="projectFilter" value="react"> React</label>
+                    <label><input type="radio" name="projectFilter" value="vr"> VR</label>
+                    <label><input type="radio" name="projectFilter" value="mern"> MERN</label>
+                </div>
+                <div class="carousel">
+                    <button class="carousel-btn left" id="projects-prev" aria-label="Previous">&#8249;</button>
+                    <div class="cards-container" id="projects-static">
+                        <div class="card project-card" data-tags="java spring">
+                            <div class="card-image">
+                                <img src="assets/cyber safety.jpg" alt="Cyber Safety Application" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Cyber Safety Application</h3>
+                                <p class="card-description">Protecting you from digital threats.
+                                    Smart steps for a safer cyberspace..</p>
+                                <div class="card-tech">
+                                    <span class="tech-tag">JAVA</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">React</span>
+                                </div>
+                                <div style="margin-top: 1rem;">
+                                    <a href="https://cyber-safety-application-frontend1.onrender.com/" class="nav-link" style="padding: 0; color: #e50914;">View Project →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card project-card" data-tags="mern react">
+                            <div class="card-image">
+                                <img src="assets/food del app.jpg" alt="Food Delivery App" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Food Delivery App</h3>
+                                <p class="card-description">Food Delivery App built on MERN stack.</p>
+                                <div class="card-tech">
+                                    <span class="tech-tag">MERN</span>
+                                    <span class="tech-tag">React</span>
+                                </div>
+                                <div style="margin-top: 1rem;">
+                                    <a href="#" class="nav-link" style="padding: 0; color: #e50914;">View Project →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card project-card" data-tags="java websocket react">
+                            <div class="card-image">
+                                <img src="assets/ChatGPT Image Sep 27, 2025, 05_19_20 PM.png" alt="Emosense" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Emosense</h3>
+                                <p class="card-description">EmoSense: Understanding emotions through AI.
+                                    A smarter way to support mental well-being.</p>
+                                <div class="card-tech">
+                                    <span class="tech-tag">AI</span>
+                                    <span class="tech-tag">NLP</span>
+                                </div>
+                                <div style="margin-top: 1rem;">
+                                    <a href="https://colab.research.google.com/drive/1x8NORrgVcInxE1g_j0gI93G9mOJSjg4G?usp=sharing" class="nav-link" style="padding: 0; color: #e50914;">View Project →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card project-card" data-tags="vr react">
+                            <div class="card-image">
+                                <img src="assets/virtual campus.jpg" alt="Virtual Campus Tour Simulator" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Virtual Campus Tour Simulator</h3>
+                                <p class="card-description">Step inside from anywhere.
+                                    Experience campus life virtually.</p>
+                                <div class="card-tech">
+                                    <span class="tech-tag">VR</span>
+                                </div>
+                                <div style="margin-top: 1rem;">
+                                    <a href="https://drive.google.com/file/d/1JdWQgRqK6a3-vw1FNYvJV79Oj8IB25Lp/view?usp=sharing" class="nav-link" style="padding: 0; color: #e50914;">View Project →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card project-card" data-tags="java spring">
+                            <div class="card-image">
+                                <img src="assets/ecom.jpg" alt="E-Commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">E‑Commerce Platform</h3>
+                                <p class="card-description">Full‑stack e‑commerce website developed using Java, Spring Boot, and React.</p>
+                                <div class="card-tech">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                </div>
+                                <div style="margin-top: 1rem;">
+                                    <a href="https://ecom-frontend-41xp.onrender.com/" class="nav-link" style="padding: 0; color: #e50914;">View Project →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn right" id="projects-next" aria-label="Next">&#8250;</button>
+                </div>
+            </section>
+
+            <!-- Certificates & Achievements (moved below Projects) -->
+            <section id="certificates" class="content-row hidden">
+                <h2 class="row-title">Certificates & Achievements</h2>
+                <div class="cards-container" id="certificates-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/wipro full stack using java.jpg" alt="Wipro Full Stack Java Certificate" class="certificate-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Wipro Full Stack Java Development</h3>
+                            <p class="card-description">Comprehensive training in Java, Spring Boot, microservices, and full-stack development methodologies.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Full Stack</span>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <a href="https://drive.google.com/file/d/1oH1tBt0iKdf_f4oC9QZN6wJGNumGcx4F/view?usp=drive_link" class="nav-link" style="padding: 0; color: #e50914;">View Certificate →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/oracle database 19c.jpg" alt="Oracle Database 19c Certificate" class="certificate-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Oracle Database 19c Certification</h3>
+                            <p class="card-description">Database administration, SQL optimization, and Oracle Cloud Infrastructure expertise.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">Oracle</span>
+                                <span class="tech-tag">Database</span>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <a href="https://drive.google.com/file/d/1Qa6B6SWCTrsgDMqSBy7uG3IMewgRoMU1/view?usp=drive_link" class="nav-link" style="padding: 0; color: #e50914;">View Certificate →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/mendix rapid.jpg" alt="Mendix Rapid Developer Certificate" class="certificate-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Mendix Rapid Developer</h3>
+                            <p class="card-description">Low-code application development, rapid prototyping, and enterprise-grade solutions.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">Mendix</span>
+                                <span class="tech-tag">Low-Code</span>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <a href="https://drive.google.com/file/d/1V1oAKJ1gQ8-S9Q7W7M_LqvYPUHvuooqC/view?usp=drive_link" class="nav-link" style="padding: 0; color: #e50914;">View Certificate →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/wipro talent next.jpg" alt="Wipro Talent Next Certificate" class="certificate-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Wipro Talent Next Program</h3>
+                            <p class="card-description">Advanced training program focusing on emerging technologies and leadership development.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">Leadership</span>
+                                <span class="tech-tag">Training</span>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <a href="https://drive.google.com/file/d/1C_fdGBYYRAFn3ZaiIT8ALnFDLpMJvyo7/view?usp=drive_link" class="nav-link" style="padding: 0; color: #e50914;">View Certificate →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/leetcode profile.jpg" alt="LeetCode Profile" class="certificate-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">LeetCode Problem Solving</h3>
+                            <p class="card-description">Consistent practice in data structures, algorithms, and competitive programming challenges. Currently ranked in top 6% globally.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">DSA</span>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <a href="https://leetcode.com/u/SAI_DHANUSH_A_E/" target="_blank" class="nav-link" style="padding: 0; color: #e50914;">View Profile →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Row -->
+            <section id="skills" class="content-row">
+                <h2 class="row-title">Technical Skills</h2>
+                
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <h4>HTML</h4>
+                            <p>Semantic markup and structure</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <h4>CSS</h4>
+                            <p>Styling and responsive design</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <h4>JavaScript</h4>
+                            <p>Dynamic web interactions</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚛️</div>
+                            <h4>React</h4>
+                            <p>Component-based UI development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">☕</div>
+                            <h4>Java</h4>
+                            <p>Enterprise application development</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🌱</div>
+                            <h4>Spring Boot</h4>
+                            <p>Microservices and REST APIs</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🟢</div>
+                            <h4>Node.js</h4>
+                            <p>JavaScript runtime environment</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔗</div>
+                            <h4>Hibernate</h4>
+                            <p>Object-relational mapping</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Databases</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🔵</div>
+                            <h4>Oracle</h4>
+                            <p>Enterprise database management</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🍃</div>
+                            <h4>MongoDB</h4>
+                            <p>NoSQL document database</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📊</div>
+                            <h4>MySQL</h4>
+                            <p>Open-source relational database</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AR/VR Skills -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AR/VR</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🥽</div>
+                            <h4>Unity</h4>
+                            <p>3D game engine and VR development</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <h4>Blender</h4>
+                            <p>3D modeling and animation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">☁️</div>
+                            <h4>AWS</h4>
+                            <p>Cloud computing platform</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🐳</div>
+                            <h4>Docker</h4>
+                            <p>Containerization platform</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔧</div>
+                            <h4>Git</h4>
+                            <p>Version control system</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🚀</div>
+                            <h4>Render</h4>
+                            <p>Cloud deployment platform</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- API Skills
+                <div class="skill-category">
+                    <h3 class="skill-category-title">API</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🔌</div>
+                            <h4>REST APIs</h4>
+                            <p>RESTful web services</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <h4>GraphQL</h4>
+                            <p>Query language for APIs</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔐</div>
+                            <h4>JWT</h4>
+                            <p>JSON Web Token authentication</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <h4>WebSocket</h4>
+                            <p>Real-time communication</p>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal for detailed views -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <h2 id="modal-title"></h2>
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
